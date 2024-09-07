@@ -143,53 +143,7 @@
             </form>
         </div>
 
-        <!-- 集計表のコンテナ -->
-        <div id="summaryContainer">
-            <button id="summaryToggle" onclick="toggleSummary()">▼ 下田市被害投稿集計表</button>
-            <div id="summaryContent">
-                <div id="summaryTableContainer"></div>
-            </div>
-        </div>
-
-        <!-- CSV抽出ボタンを左端に配置するためのコンテナ -->
-        <div class="button-container left-align">
-            <button id="csvExportBtn" class="csv-export-button">被害情報投稿データ　CSV抽出</button>
-        </div>
-
-        <!-- 被害情報投稿集約表のトグルボタンとコンテナ -->
-        <div id="damageReportContainer">
-            <button id="damageReportToggle" class="toggle-button" onclick="toggleDamageReport()">▼ 被害情報投稿集約表</button>
-            <div id="damageReportTableContainer">
-                <table id="postsTable">
-                    <thead>
-                        <tr>
-                            <th>日時</th>
-                            <th>名前（カタカナ）</th>
-                            <th>名前（漢字）</th>
-                            <th>所属機関</th>
-                            <th>所属部署名</th> 
-                            <th>役職名</th> 
-                            <th>TEL</th> 
-                            <th>MAIL</th> 
-                            <th>事態発生場所近隣目印</th>
-                            <th>事態種別</th>
-                            <th>発生場所</th>
-                            <th>住所（つづき）</th>
-                            <th>緯度/経度</th>
-                            <th>写真</th>
-                            <th>詳細（100字以内）</th>
-                            <th>要救助者人数</th> 
-                            <th>操作</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- 投稿内容がここに追加される -->
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-        <!-- フォームをここに移動 -->
+                <!-- フォームをここに移動 -->
         <div class="form-container" style="display: none;">
             <form id="emergencyForm">
                 <!-- フォームフィールド -->
@@ -271,6 +225,52 @@
                 <button type="submit" id="submitBtn" class="disabled" disabled>投稿</button>
                 <button type="button" id="clearBtn">消去</button>
             </form>
+        </div>
+        
+        <!-- 集計表のコンテナ -->
+        <div id="summaryContainer">
+            <button id="summaryToggle" onclick="toggleSummary()">▼ 下田市被害投稿集計表</button>
+            <div id="summaryContent">
+                <div id="summaryTableContainer"></div>
+            </div>
+        </div>
+
+        <!-- CSV抽出ボタンを左端に配置するためのコンテナ -->
+        <div class="button-container left-align">
+            <button id="csvExportBtn" class="csv-export-button">被害情報投稿データ　CSV抽出</button>
+        </div>
+
+        <!-- 被害情報投稿集約表のトグルボタンとコンテナ -->
+        <div id="damageReportContainer">
+            <button id="damageReportToggle" class="toggle-button" onclick="toggleDamageReport()">▼ 被害情報投稿集約表</button>
+            <div id="damageReportTableContainer">
+                <table id="postsTable">
+                    <thead>
+                        <tr>
+                            <th>日時</th>
+                            <th>名前（カタカナ）</th>
+                            <th>名前（漢字）</th>
+                            <th>所属機関</th>
+                            <th>所属部署名</th> 
+                            <th>役職名</th> 
+                            <th>TEL</th> 
+                            <th>MAIL</th> 
+                            <th>事態発生場所近隣目印</th>
+                            <th>事態種別</th>
+                            <th>発生場所</th>
+                            <th>住所（つづき）</th>
+                            <th>緯度/経度</th>
+                            <th>写真</th>
+                            <th>詳細（100字以内）</th>
+                            <th>要救助者人数</th> 
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- 投稿内容がここに追加される -->
+                    </tbody>
+                </table>
+            </div>
         </div>
 
         <!-- Google Mapsの表示モーダル -->
